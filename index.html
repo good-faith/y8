@@ -1,8 +1,11 @@
 <html>
   <head>
-    <title>Page Title</title>
+    <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="src/css/slimmenu.min.css" type="text/css">
+
     <style>
       * {
         box-sizing: border-box;
@@ -102,12 +105,12 @@
     </div>
 
     <!-- Navigation Bar -->
-    <div class="navbar">
+    <div id="navigation" class="slimmenu">
       <a href="/index.html">Home</a> 
-      <a href="#">About Us</a> 
-      <a href="#">Shop</a>
-      <a href="#">Blog</a> 
-      <a href="#">Calendar</a>
+      <a href="/AboutUs.html">About Us</a> 
+      <a href="/Shop.html">Shop</a>
+      <a href="/Blog.html">Blog</a> 
+      <a href="/Calendar.html">Calendar</a>
     </div>
 
     <!-- The flexible grid (content) -->
@@ -149,6 +152,19 @@
         </p>
       </div>
     </div>
+
+    <!-- Menu -->
+    <script src="src/js/jquery.slimmenu.min.js"">
+      $('#navigation').slimmenu(
+          {
+              resizeWidth: '800',
+              collapserTitle: 'Main Menu',
+              animSpeed: 'medium',
+              easingEffect: null,
+              indentChildren: false,
+              childrenIndenter: '&nbsp;'
+          });
+    </script>
 
     <!-- Footer -->
     <div class="footer"><h2>Footer</h2></div>
