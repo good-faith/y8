@@ -1,4 +1,4 @@
-# REsponsice Starter Site Using Vanilla HTML
+# Responsive Starter Site Using Vanilla HTML
 
 There are many things a compentent developer could do to extend the functionality of this site, if that is you, get started, clone: 
 
